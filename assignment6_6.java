@@ -5,9 +5,9 @@ public class assignment6_6 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		// 10°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â¹Ş¾Æ ±× Áß °¡Àå ÀÛÀº ¼ö¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À
-		// (ÀÔ·Â¹ŞÀ» Á¤¼ö´Â 1000À» ³ÑÁö ¾Ê´Â´Ù.)
-		// ÀÔ·Â : 5 10 8 55 6 31 12 24 61 2  Ãâ·Â : 2
+		// 10ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ ê·¸ ì¤‘ ê°€ì¥ ì‘ì€ ìˆ˜ë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤
+		// (ì…ë ¥ë°›ì„ ì •ìˆ˜ëŠ” 1000ì„ ë„˜ì§€ ì•ŠëŠ”ë‹¤.)
+		// ì…ë ¥ : 5 10 8 55 6 31 12 24 61 2  ì¶œë ¥ : 2
 		
 		
 		Scanner in = new Scanner(System.in);
@@ -17,12 +17,19 @@ public class assignment6_6 {
 		for(int i = 0; i < num.length; i++) {
 			num[i] = in.nextInt();
 			
-			
+			if(num[i] > 100)
+				break;
 		}
 		
+		int min = num[0];
 		
+		for(int i = 1; i < num.length; i++){
+			if(min > num[i])
 		
-				
+				min = num[i]
+		}
+		system.out.println(min);
+		
 		in.close();
 	}
 
